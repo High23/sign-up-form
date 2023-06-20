@@ -1,27 +1,21 @@
 body, html {
-    display: flex;
     height: 100%;
     margin: 0;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-
 
 @font-face {
    font-family: norse-bold;
    src: url(Norse-Bold.otf);
 }
 
-
-.page-container {
+.page-container, .img-container, body{
    display: flex;
 }
-
 
 .img-container {
-   display: flex;
    position: relative;
 }
-
 
 .photo-credit {
    display: flex;
@@ -33,7 +27,6 @@ body, html {
    padding: 12px 0;
    gap: 5px;
 }
-
 
 .odin-logo {
    display: flex;
@@ -49,11 +42,30 @@ body, html {
    padding: 14px 0;
 }
 
-
 img[src="odin-lined.png"] {
    max-height:  125px;
 }
 
 a {
    color: white;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 64px 32px;
+}
+
+.signup-text, .form, .create-account {
+    padding-left: 32px;
+}
+
+.signup-text, .form > p {
+    font-size: 1.25rem;
+    max-width: 580px;
+    font-weight: 500;
+}
+.signup-text {
+    margin: 0 0;
 }
