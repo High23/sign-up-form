@@ -24,16 +24,36 @@ body, html {
 
 
 .photo-credit {
+   display: flex;
+   justify-content: center; 
+   width: 100%;
+   color: white;
    position: absolute;
    bottom: 0;
+   padding: 12px 0;
+   gap: 5px;
 }
 
 
 .odin-logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
    position: absolute;
+   top: 2.25em;
+   font-size: 85px;
+   font-family: norse-bold;
+   background-color: hsla(0, 0%, 6%, 0.452);
+   width: 100%;
+   padding: 14px 0;
 }
 
 
 img[src="odin-lined.png"] {
    max-height:  125px;
+}
+
+a {
+   color: white;
 }
