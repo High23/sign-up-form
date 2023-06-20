@@ -1,5 +1,39 @@
 body, html {
+    display: flex;
     height: 100%;
     margin: 0;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-} 
+}
+
+
+@font-face {
+   font-family: norse-bold;
+   src: url(Norse-Bold.otf);
+}
+
+
+.page-container {
+   display: flex;
+}
+
+
+.img-container {
+   display: flex;
+   position: relative;
+}
+
+
+.photo-credit {
+   position: absolute;
+   bottom: 0;
+}
+
+
+.odin-logo {
+   position: absolute;
+}
+
+
+img[src="odin-lined.png"] {
+   max-height:  125px;
+}
