@@ -28,36 +28,37 @@
             </div>
             <div class="form">
                 <p>Let's do this!</p>
-                <form action="">
+                <form action="" id="form1">
                     <div>
                         <label for="firstName">FIRST NAME</label>
-                        <input type="text" name="firstName" id="firstName">
+                        <input type="text" name="firstName" id="firstName" placeholder="Luke" required>
                     </div>
                     <div>
                         <label for="lastName"> LAST NAME</label>
-                        <input type="text" name="lastName" id="lastName">
+                        <input type="text" name="lastName" id="lastName" placeholder="Smith" required>
                     </div>
                     <div>
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" placeholder="person@example.com" required>
+                        <span></span>
                     </div>
                     <div>
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="phone">
+                        <input type="tel" name="phone" id="phone" placeholder="555-555-5555" required>
                     </div>
                     <div>
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
                         <span></span>
                     </div>
                     <div>
                         <label for="confirmPassword">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirmPassword" id="confirmPassword">
+                        <input type="password" name="confirmPassword" id="confirmPassword" required>
                     </div>
                 </form>
             </div>
             <div class="create-account">
-                <button type="submit" id="createAccount">Create Account</button>
+                <button type="submit" id="createAccount" form="form1">Create Account</button>
                 <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
