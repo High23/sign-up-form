@@ -125,17 +125,20 @@ button {
     width: 200px;
     padding: 12px 32px;
     border-radius: 5px;
-    border: none;
+    border: 1px solid transparent;
     box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.151);
 }
+
 .create-account > p {
     margin: 32px 0 0 4px;
 }
+
 .create-account > p > a {
     color: #77a848;
     text-decoration: none;
     font-weight: 500;
 }
+
 .create-account > p > a:hover {
     text-decoration: underline;
 }
@@ -156,4 +159,9 @@ input[id="password"].error + span::before {
 
 input[type="email"]:invalid {
     border: 1px solid red;
+}
+
+button:active {
+    background-color: #6c8655;
+    border: 1px solid black;
 }
