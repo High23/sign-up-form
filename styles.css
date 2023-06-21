@@ -99,7 +99,7 @@ form > div {
     gap: 2px;
 }
 
-input {
+input:required {
     appearance: none;
     height: 25px;
     padding: 2px;
@@ -107,11 +107,11 @@ input {
     border-radius: 5px;
 }
 
-input:hover {
+input:required:hover {
     border-color: black;
 }
 
-input:focus {
+input:required:focus {
     border-color: blue;
     box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
     outline: none;
@@ -147,6 +147,10 @@ button {
     border: 1px solid red;
 }
 
+.good, .good:focus {
+    border: 1px solid green;
+}
+
 input[id="password"].error {
     position: relative;
 }
@@ -155,10 +159,6 @@ input[id="password"].error + span::before {
     position: absolute;
     content: "* Passwords do not match";
     color: red;
-}
-
-input[type="email"]:invalid {
-    border: 1px solid red;
 }
 
 button:active {
