@@ -9,12 +9,16 @@ body, html {
    src: url(Norse-Bold.otf);
 }
 
-.page-container, .img-container, body{
+.page-container {
    display: flex;
 }
 
 .img-container {
    position: relative;
+   background-image: url(green-plant.jpg);
+   background-size: cover;
+   width: 45vw;
+   height: 100vh;
 }
 
 .photo-credit {
@@ -55,10 +59,11 @@ a {
     flex-direction: column;
     justify-content: space-evenly;
     padding: 64px 0 190px 32px;
+    width: 40vw;
 }
 
 .signup-text, .form, .create-account {
-    padding-left: 16px;
+    padding-left: 24px;
 }
 
 .signup-text, .form > p {
@@ -66,19 +71,24 @@ a {
     max-width: 580px;
     font-weight: 500;
 }
+
 .signup-text {
     margin: 0 0;
 }
+
 form {
     display: flex;
     flex-wrap: wrap;
     max-width: 550px;
     justify-content: space-between;
+    padding-bottom: 10px;
 }
+
 .form {
     flex: 0 1;
     box-shadow: 0 7px 6px 0 rgba(0, 0, 0, 0.2);
 }
+
 form > div {
     display: flex;
     flex-direction: column;
@@ -86,6 +96,7 @@ form > div {
     width: 250px;
     height: 45px;
     margin-bottom: 20px;
+    gap: 2px;
 }
 
 input {
@@ -116,4 +127,33 @@ button {
     border-radius: 5px;
     border: none;
     box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.151);
+}
+.create-account > p {
+    margin: 32px 0 0 4px;
+}
+.create-account > p > a {
+    color: #77a848;
+    text-decoration: none;
+    font-weight: 500;
+}
+.create-account > p > a:hover {
+    text-decoration: underline;
+}
+
+.error, .error:focus {
+    border: 1px solid red;
+}
+
+input[id="password"].error {
+    position: relative;
+}
+
+input[id="password"].error + span::before {
+    position: absolute;
+    content: "* Passwords do not match";
+    color: red;
+}
+
+input[type="email"]:invalid {
+    border: 1px solid red;
 }
