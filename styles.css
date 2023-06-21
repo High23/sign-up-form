@@ -161,6 +161,11 @@ input[id="password"].error + span::before {
     color: red;
 }
 
+input[id="password"].empty + span::before {
+    content: "";
+    color: #E5E7EB;
+}
+
 button:active {
     background-color: #6c8655;
     border: 1px solid black;
