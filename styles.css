@@ -53,12 +53,12 @@ a {
 .form-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 64px 32px;
+    justify-content: space-evenly;
+    padding: 64px 0 190px 32px;
 }
 
 .signup-text, .form, .create-account {
-    padding-left: 32px;
+    padding-left: 16px;
 }
 
 .signup-text, .form > p {
@@ -68,4 +68,52 @@ a {
 }
 .signup-text {
     margin: 0 0;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 550px;
+    justify-content: space-between;
+}
+.form {
+    flex: 0 1;
+    box-shadow: 0 7px 6px 0 rgba(0, 0, 0, 0.2);
+}
+form > div {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    width: 250px;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+input {
+    appearance: none;
+    height: 25px;
+    padding: 2px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:hover {
+    border-color: black;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+button {
+    color: white;
+    background-color: #596D48;
+    font-size: 1rem;
+    font-weight: 600;
+    width: 200px;
+    padding: 12px 32px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.151);
 }
