@@ -15,11 +15,13 @@ confirmPassword.addEventListener("change", () => {
 });
 
 function checkPasswords(passwordOne, passwordTwo){
-    if (passwordOne.value === "" && passwordTwo === ""){
+    if ((Boolean(passwordOne.value) === false) && (Boolean(passwordTwo.value) === false)){
         passwordOne.classList.remove('good');
         passwordTwo.classList.remove('good');
         passwordOne.classList.remove('error');
         passwordTwo.classList.remove('error');
+        passwordOne.classList.add('empty');
+        passwordTwo.classList.add('empty');
     } 
     else if (!(passwordOne.value === passwordTwo.value)){
         passwordOne.classList.add('error');
