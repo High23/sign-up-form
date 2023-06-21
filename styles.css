@@ -99,7 +99,7 @@ form > div {
     gap: 2px;
 }
 
-input:required {
+input {
     appearance: none;
     height: 25px;
     padding: 2px 0 2px 6px;
@@ -107,11 +107,11 @@ input:required {
     border-radius: 5px;
 }
 
-input:required:hover {
+input:hover {
     border-color: black;
 }
 
-input:required:focus {
+input:focus {
     border-color: blue;
     box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
     outline: none;
